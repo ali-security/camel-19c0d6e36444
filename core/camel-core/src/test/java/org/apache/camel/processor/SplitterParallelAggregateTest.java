@@ -58,21 +58,21 @@ public class SplitterParallelAggregateTest extends ContextTestSupport {
 
     @Test
     public void test1() throws Exception {
-        assumeTrue(enabled);
+        assumeTrue(enabled, "Manual performance test: disabled by default (enabled=false), run manually");
         int numberOfRequests = 1;
         timeSplitRoutes(numberOfRequests);
     }
 
     @Test
     public void test2() throws Exception {
-        assumeTrue(enabled);
+        assumeTrue(enabled, "Manual performance test: disabled by default (enabled=false), run manually");
         int numberOfRequests = 2;
         timeSplitRoutes(numberOfRequests);
     }
 
     @Test
     public void test4() throws Exception {
-        assumeTrue(enabled);
+        assumeTrue(enabled, "Manual performance test: disabled by default (enabled=false), run manually");
         int numberOfRequests = 4;
         timeSplitRoutes(numberOfRequests);
     }
